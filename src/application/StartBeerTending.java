@@ -355,7 +355,7 @@ public class StartBeerTending extends RoboticsAPIApplication {
 
 		tcp.move(lin(getApplicationData().getFrame("/P22"))
 				.setCartVelocity(pathVel).setBlendingCart(cont1));
-
+// Open Grippers when Beer glass is pulled
 		while (true) {
 
 			ForceSensorData data = robot.getExternalForceTorque(robot
